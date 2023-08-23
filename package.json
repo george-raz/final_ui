@@ -1,0 +1,29 @@
+{
+  "name": "final_ui",
+  "version": "1.0.0",
+  "description": "UI test playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --headed --reporter=line,allure-playwright",
+    "allure:reporter": "npx allure generate ./allure-results --clean",
+    "allure:open": "npx allure open ./allure-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/george-raz/final_ui.git"
+  },
+  "author": "George R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/george-raz/final_ui/issues"
+  },
+  "homepage": "https://github.com/george-raz/final_ui#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.37.1",
+    "allure-commandline": "^2.23.1",
+    "allure-playwright": "^2.5.0"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
